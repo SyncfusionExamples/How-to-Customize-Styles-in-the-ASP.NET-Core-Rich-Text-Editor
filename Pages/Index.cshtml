@@ -1,0 +1,44 @@
+﻿@page
+@model Pages.IndexModel
+
+<div class="rte-container">
+    <ejs-richtexteditor id="rte" cssClass="e-rte-custom" width="70%" placeholder="Type Something..." showCharCount=true>
+
+    </ejs-richtexteditor>
+</div>
+
+<style>
+    .rte-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .e-rte-custom.e-richtexteditor .e-rte-content .e-content,
+    .e-rte-custom.e-richtexteditor .e-rte-srctextarea {
+        font-family: Segoe ui;
+        font-size: 20px;
+        color: darkblue;
+    }
+
+    .e-rte-custom.e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-icons,
+    .e-rte-custom.e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-dropdown-btn .e-rte-dropdown-btn-text {
+        color: red;
+    }
+
+    .e-rte-custom.e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-tbar-btn.e-icon-btn:hover,
+    .e-rte-custom.e-richtexteditor .e-rte-toolbar .e-toolbar-item .e-dropdown-btn .e-rte-dropdown-btn-text:hover,
+    .e-rte-custom.e-richtexteditor .e-rte-toolbar .e-toolbar-item.e-active .e-tbar-btn.e-icon-btn {
+        background: lightgreen;
+    }
+
+    .e-rte-custom.e-richtexteditor .e-rte-character-count {
+        color: red;
+        font-family: segoe ui;
+        font-size: 18px;
+    }
+
+    .e-rte-custom.e-richtexteditor .e-rte-placeholder {
+        font-family: monospace;
+        color: blue;
+    }
+</style>
